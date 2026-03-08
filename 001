@@ -1,0 +1,43 @@
+
+# Kriolu Dictionary
+
+Aplicação Flutter de dicionário Crioulo Cabo‑verdiano → Português.
+
+## Funcionalidades
+- Pesquisa de palavras
+- Tradução crioulo → português
+- Exemplos de frases
+- Base de dados local JSON
+
+## Instalar
+
+git clone https://github.com/SEU-USUARIO/kriolu-dictionary.git
+cd kriolu-dictionary
+flutter pub get
+flutter run
+
+
+.dart_tool/
+build/
+.DS_Store
+.idea/
+.vscode/
+android/.gradle
+android/app/build
+
+
+name: kriolu_dictionary
+description: Dicionario Crioulo Cabo-verdiano para Portugues
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/dictionary.json
